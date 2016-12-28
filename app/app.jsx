@@ -1,17 +1,18 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var Main = require('Main');
+var Nav = require('Nav');
 
-var objOne = {
-    name: 'Patricia',
-    location: 'San Francisco'
-};
-
-var objTwo = {
-    age: 24,
-    ...objOne
-};
-
-console.log(objTwo);
+// this is destructuring syntax
+// line 3 is the same as:
+// var Route = require('react-route').Route;
 
 ReactDOM.render(
-    <h1>Boilerplate app</h1>, document.getElementById('app'));
+    <Router history={hashHistory}>
+      <Route path="/" component={Main}>
+
+      </Route>
+    </Router>,
+     document.getElementById('app')
+   );
