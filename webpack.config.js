@@ -1,10 +1,12 @@
 module.exports = {
-    entry: './public/app.jsx',
+    entry: './app/app.jsx',
     output: {
         path: __dirname,
         filename: './public/bundle.js'
     },
     resolve: {
+        root: __dirname,
+        alias: {        },
         extensions: ['', '.js', '.jsx']
     },
     module: {
