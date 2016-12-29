@@ -64,3 +64,10 @@ console.log(add(5,0));
 
 var addExpression = (a, b) => a + b;
 console.log(addExpression(9, 9));
+
+
+// var thingie = (a, b) => a + b;
+
+// var thingie2 = (a, b) => {
+// return a + b;
+// }
